@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// we can increase performance in this code by:
+// setting a bool variable to use "input.get" only once in update
+// using a "string to hash" function for ID optimization
+
 public class BotAnimationController : MonoBehaviour
 {
     Animator animator;
