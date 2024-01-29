@@ -26,5 +26,13 @@ public class BotAnimationController : MonoBehaviour
         {
             animator.SetBool("isAttacking", false);
         }
+        if (Input.GetKey(KeyCode.H))
+        {
+            animator.SetBool("isHit", true);
+        }
+        if (Input.GetKeyUp(KeyCode.H))
+        {
+            animator.SetBool("isHit", false);
+        }
     }
 }
